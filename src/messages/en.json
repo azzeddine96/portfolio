@@ -1,0 +1,139 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact",
+        "toggleTheme": "Toggle theme",
+        "toggleLanguage": "Toggle language"
+    },
+    "Hero": {
+        "greeting": "Hello, I'm",
+        "role": "Senior Full-Stack Engineer",
+        "description": "Specializing in Laravel, Vue 3, React, and Next.js. I build scalable SaaS platforms and revenue-driven applications.",
+        "viewProjects": "View My Work",
+        "downloadResume": "Download Resume"
+    },
+    "About": {
+        "title": "About Me",
+        "description": "I’m Azzeddine Fejri, a Senior Full-Stack Software Engineer specializing in Laravel, Vue 3, React, and Next.js, with strong experience building scalable SaaS platforms, multi-tenant systems, and business-critical applications.\n\nI combine clean architecture, high-performance back-end systems, and modern front-end experiences to deliver products that are not only technically solid, but also revenue-driven and user-focused.",
+        "skillsTitle": "Technical Arsenal",
+        "whatIDoTitle": "What I Do Best",
+        "valueTitle": "How I Add Value",
+        "services": {
+            "saas": {
+                "title": "End-to-End SaaS",
+                "desc": "Design & build platforms from DB to UI/UX."
+            },
+            "multitenant": {
+                "title": "Multi-Tenant Apps",
+                "desc": "Laravel apps with advanced permissions."
+            },
+            "billing": {
+                "title": "Billing Systems",
+                "desc": "Stripe, wallets, coupons & feature pricing."
+            },
+            "dashboards": {
+                "title": "Modern Dashboards",
+                "desc": "Analytics-rich UIs with Vue 3 / React."
+            },
+            "ai": {
+                "title": "AI Integration",
+                "desc": "AI & microservices using Node.js."
+            },
+            "performance": {
+                "title": "Performance",
+                "desc": "Queues, Redis, Octane, Horizon."
+            }
+        },
+        "values": [
+            "I think product first, not just code",
+            "I understand billing & scalability challenges",
+            "I write maintainable code that teams can evolve",
+            "I proactively identify problems & solutions",
+            "I lead initiatives and work independently"
+        ]
+    },
+    "Experience": {
+        "title": "Professional Experience",
+        "jobs": {
+            "lofty": {
+                "role": "Senior Full-Stack Developer",
+                "company": "Lofty Service & Araba",
+                "period": "2024 – Present",
+                "description": "SaaS & E-commerce Platforms",
+                "achievements": [
+                    "Built a large-scale multi-tenant e-commerce platform for sellers",
+                    "Developed seller & admin dashboards with Vue 3 and Laravel",
+                    "Implemented Stripe subscriptions, feature-based pricing, and wallets",
+                    "Designed a drag-and-drop page builder for product pages",
+                    "Integrated traffic tracking & conversion APIs (Meta, TikTok)",
+                    "Led codebase refactoring using SOLID principles",
+                    "Introduced Node.js microservices for AI-powered features"
+                ]
+            },
+            "quintel": {
+                "role": "Full-Stack Developer",
+                "company": "Quintel",
+                "period": "2022 – 2024",
+                "description": "HealthTech & Real-Time Systems",
+                "achievements": [
+                    "Built CRM and appointment systems for doctors",
+                    "Developed real-time scheduling with FullCalendar & Socket.IO",
+                    "Implemented video & audio call features",
+                    "Designed asynchronous systems using queues",
+                    "Integrated email and SMS notification services",
+                    "Worked in Agile environment with Jira"
+                ]
+            },
+            "wisecam": {
+                "role": "Software Engineer",
+                "company": "Wisecam",
+                "period": "2021 – 2022",
+                "description": "Computer Vision & Web Interfaces",
+                "achievements": [
+                    "Developed web interfaces for camera management",
+                    "Integrated computer vision APIs for real-time analysis",
+                    "Optimized database performance for large datasets"
+                ]
+            }
+        }
+    },
+    "Projects": {
+        "title": "Featured Projects",
+        "viewLive": "Live Demo",
+        "viewCode": "Source Code",
+        "items": {
+            "saas": {
+                "title": "SaaS Billing & Usage Platform",
+                "description": "A high-performance billing system handling metered usage, subscriptions, and invoicing for enterprise clients.",
+                "stack": "Laravel, Vue 3, MySQL, Redis, Stripe",
+                "features": "Real-time usage tracking, Invoice generation, Tiered pricing logic"
+            },
+            "kanban": {
+                "title": "Real-time Kanban System",
+                "description": "Collaborative project management tool with live updates, drag-and-drop interface, and SLA tracking.",
+                "stack": "Laravel, Soketi, Vue 3, Tailwind",
+                "features": "WebSockets updates, Drag & Drop, Team permissions, Activity logs"
+            },
+            "booking": {
+                "title": "Multi-Provider Booking App",
+                "description": "A complex scheduling platform allowing users to book appointments with multiple service providers across different timezones.",
+                "stack": "Next.js, Node.js, PostgreSQL, Prisma",
+                "features": "Timezone handling, Double-booking prevention, Calendar sync"
+            },
+            "marketplace": {
+                "title": "B2B RFQ Marketplace",
+                "description": "A trading platform connecting suppliers and buyers with a Request for Quote system and negotiation flow.",
+                "stack": "Laravel API, Next.js, Docker",
+                "features": "RFQ Workflow, Chat system, Supplier verification, Admin panel"
+            }
+        }
+    },
+    "Contact": {
+        "title": "Let's Work Together",
+        "description": "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+        "cta": "Send me an email"
+    }
+}

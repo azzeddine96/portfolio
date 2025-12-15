@@ -1,0 +1,139 @@
+{
+    "Navigation": {
+        "home": "Accueil",
+        "about": "À propos",
+        "experience": "Expérience",
+        "projects": "Projets",
+        "contact": "Contact",
+        "toggleTheme": "Changer de thème",
+        "toggleLanguage": "Changer de langue"
+    },
+    "Hero": {
+        "greeting": "Bonjour, je suis",
+        "role": "Ingénieur Full-Stack Senior",
+        "description": "Spécialisé en Laravel, Vue 3, React et Next.js. Je construis des plateformes SaaS évolutives et des applications génératrices de revenus.",
+        "viewProjects": "Voir mes projets",
+        "downloadResume": "Télécharger CV"
+    },
+    "About": {
+        "title": "À Propos de Moi",
+        "description": "Je suis Azzeddine Fejri, un ingénieur logiciel Full-Stack senior spécialisé en Laravel, Vue 3, React et Next.js. Je possède une solide expérience dans la création de plateformes SaaS évolutives, de systèmes multi-locataires et d'applications critiques.\n\nJe combine une architecture propre, des systèmes back-end performants et des expériences front-end modernes pour livrer des produits non seulement techniquement solides, mais aussi centrés sur l'utilisateur et la croissance.",
+        "skillsTitle": "Arsenal Technique",
+        "whatIDoTitle": "Ce que je fais de mieux",
+        "valueTitle": "Comment j'apporte de la valeur",
+        "services": {
+            "saas": {
+                "title": "Plateformes SaaS complètes",
+                "desc": "Design et développement de la BDD à l'expérience utilisateur."
+            },
+            "multitenant": {
+                "title": "Apps Multi-Tenant",
+                "desc": "Applications Laravel avancées avec gestion de permissions."
+            },
+            "billing": {
+                "title": "Systèmes de Facturation",
+                "desc": "Stripe, portefeuilles, coupons et tarification par fonctionnalité."
+            },
+            "dashboards": {
+                "title": "Tableaux de bord modernes",
+                "desc": "Interfaces analytiques riches avec Vue 3 / React."
+            },
+            "ai": {
+                "title": "Intégration IA",
+                "desc": "IA et microservices utilisant Node.js."
+            },
+            "performance": {
+                "title": "Performance",
+                "desc": "Queues, Redis, Octane, Horizon pour la vitesse."
+            }
+        },
+        "values": [
+            "Je pense produit avant tout, pas juste code",
+            "Je comprends les défis de facturation et de scalabilité",
+            "J'écris du code maintenable que les équipes peuvent faire évoluer",
+            "J'identifie les problèmes proactivement et propose des solutions",
+            "Je suis autonome et capable de diriger des initiatives"
+        ]
+    },
+    "Experience": {
+        "title": "Expérience Professionnelle",
+        "jobs": {
+            "lofty": {
+                "role": "Développeur Full-Stack Senior",
+                "company": "Lofty Service & Araba",
+                "period": "2024 – Présent",
+                "description": "Plateformes SaaS & E-commerce",
+                "achievements": [
+                    "Création d'une plateforme e-commerce multi-vendeurs à grande échelle",
+                    "Développement de tableaux de bord vendeurs & admin avec Vue 3 et Laravel",
+                    "Implémentation d'abonnements Stripe, tarification par fonctionnalités et portefeuilles",
+                    "Conception d'un constructeur de pages drag-and-drop",
+                    "Intégration d'API de suivi de trafic et conversion (Meta, TikTok)",
+                    "Refactoring du code utilisant les principes SOLID",
+                    "Introduction de microservices Node.js pour l'IA"
+                ]
+            },
+            "quintel": {
+                "role": "Développeur Full-Stack",
+                "company": "Quintel",
+                "period": "2022 – 2024",
+                "description": "HealthTech & Systèmes Temps Réel",
+                "achievements": [
+                    "Création de CRM et systèmes de rendez-vous pour médecins",
+                    "Planification en temps réel avec FullCalendar & Socket.IO",
+                    "Fonctionnalités d'appels vidéo et audio",
+                    "Systèmes asynchrones utilisant des files d'attente (Queues)",
+                    "Notifications email et SMS intégrées",
+                    "Travail en environnement Agile avec Jira"
+                ]
+            },
+            "wisecam": {
+                "role": "Ingénieur Logiciel",
+                "company": "Wisecam",
+                "period": "2021 – 2022",
+                "description": "Vision par Ordinateur & Interfaces Web",
+                "achievements": [
+                    "Développement d'interfaces web pour la gestion de caméras",
+                    "Intégration d'API de vision par ordinateur",
+                    "Optimisation de bases de données volumineuses"
+                ]
+            }
+        }
+    },
+    "Projects": {
+        "title": "Projets Phares",
+        "viewLive": "Voir le Demo",
+        "viewCode": "Code Source",
+        "items": {
+            "saas": {
+                "title": "Plateforme Facturation SaaS",
+                "description": "Système de facturation haute performance gérant l'utilisation mesurée, les abonnements et la facturation entreprise.",
+                "stack": "Laravel, Vue 3, MySQL, Redis, Stripe",
+                "features": "Suivi temps réel, Génération factures, Tarifs par paliers"
+            },
+            "kanban": {
+                "title": "Système Kanban Temps Réel",
+                "description": "Outil de gestion de projet collaboratif avec mises à jour en direct et suivi SLA.",
+                "stack": "Laravel, Soketi, Vue 3, Tailwind",
+                "features": "WebSockets, Glisser-déposer, Permissions d'équipe"
+            },
+            "booking": {
+                "title": "App de Réservation Multi-Pro",
+                "description": "Plateforme de planification complexe permettant la réservation avec plusieurs prestataires sur différents fuseaux horaires.",
+                "stack": "Next.js, Node.js, PostgreSQL, Prisma",
+                "features": "Gestion fuseaux horaires, Anti-doubles réservations"
+            },
+            "marketplace": {
+                "title": "Marketplace B2B RFQ",
+                "description": "Plateforme commerciale connectant fournisseurs et acheteurs avec système de demande de devis.",
+                "stack": "Laravel API, Next.js, Docker",
+                "features": "Flux RFQ, Chat, Vérification fournisseurs"
+            }
+        }
+    },
+    "Contact": {
+        "title": "Travaillons Ensemble",
+        "description": "Toujours ouvert pour discuter de nouveaux projets, d'idées créatives ou d'opportunités de rejoindre votre vision.",
+        "cta": "Envoyer un email"
+    }
+}
