@@ -5,6 +5,7 @@
         "experience": "Expérience",
         "projects": "Projets",
         "contact": "Contact",
+        "services": "Services",
         "toggleTheme": "Changer de thème",
         "toggleLanguage": "Changer de langue"
     },
@@ -105,6 +106,36 @@
         "viewLive": "Voir le Demo",
         "viewCode": "Code Source",
         "items": {
+            "araba": {
+                "title": "Araba - SaaS E-commerce",
+                "description": "Une plateforme SaaS puissante permettant aux utilisateurs de lancer des boutiques en ligne complètes en quelques minutes.",
+                "stack": "Laravel, Vue.js, MySQL",
+                "features": "Créateur de boutique, Multi-tenant, Paiements, Analytique"
+            },
+            "loftyservice": {
+                "title": "LoftyService",
+                "description": "Une plateforme de services dédiée à la croissance du e-commerce, offrant des solutions de logistique et de stockage.",
+                "stack": "Laravel, Vue.js, TailwindCSS",
+                "features": "Suivi de commandes, Gestion d'entrepôt, API Logistique"
+            },
+            "procurion": {
+                "title": "Procurion",
+                "description": "Plateforme de communication et de gestion spécialisée pour les professionnels de santé.",
+                "stack": "Laravel, Vanilla JS, Blade",
+                "features": "Messagerie sécurisée, Annuaire pro, Gestion des ressources"
+            },
+            "docselect": {
+                "title": "DocSelect",
+                "description": "Application de santé connectant les patients aux médecins locaux pour des visites à domicile et consultations.",
+                "stack": "Laravel, React.js, Material UI",
+                "features": "Prise de rendez-vous, Géolocalisation, Profils médecins"
+            },
+            "logidesk": {
+                "title": "Logidesk",
+                "description": "Solution de marketing digital et d'emailing aidant les entreprises à optimiser leur communication.",
+                "stack": "Symfony, Ajax, Twig, Vanilla JS",
+                "features": "Campagnes Email, Tableau de bord, Gestion contacts"
+            },
             "saas": {
                 "title": "Plateforme Facturation SaaS",
                 "description": "Système de facturation haute performance gérant l'utilisation mesurée, les abonnements et la facturation entreprise.",
@@ -135,5 +166,49 @@
         "title": "Travaillons Ensemble",
         "description": "Toujours ouvert pour discuter de nouveaux projets, d'idées créatives ou d'opportunités de rejoindre votre vision.",
         "cta": "Envoyer un email"
+    },
+    "Services": {
+        "title": "Catalogue de Services",
+        "subtitle": "Sélectionnez les services dont vous avez besoin pour bâtir votre solution idéale.",
+        "cta": {
+            "selected": "{count} services sélectionnés",
+            "whatsapp": "Discuter sur WhatsApp",
+            "email": "Envoyer un Email",
+            "empty": "Sélectionnez un service"
+        },
+        "items": {
+            "portfolio": {
+                "title": "Site Portfolio",
+                "desc": "Mettez en valeur votre travail avec un portfolio performant."
+            },
+            "websites": {
+                "title": "Site Vitrine",
+                "desc": "Pages d'atterrissage professionnelles et sites d'entreprise."
+            },
+            "webapps": {
+                "title": "Application Web",
+                "desc": "Plateformes SaaS complexes, tableaux de bord et outils de gestion."
+            },
+            "ecommerce": {
+                "title": "Boutique E-commerce",
+                "desc": "Boutiques en ligne complètes avec intégration de paiement."
+            },
+            "mobile": {
+                "title": "Application Mobile",
+                "desc": "Applications mobiles multiplateformes pour iOS et Android."
+            },
+            "architecture": {
+                "title": "Architecture Système",
+                "desc": "Conception backend évolutive, optimisation de base de données."
+            },
+            "features": {
+                "title": "Nouvelles Fonctionnalités",
+                "desc": "Ajouter de nouvelles fonctionnalités à votre application existante."
+            },
+            "bugs": {
+                "title": "Correction de Bugs",
+                "desc": "Débogage et optimisation des performances."
+            }
+        }
     }
 }

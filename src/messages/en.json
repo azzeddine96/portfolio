@@ -5,6 +5,7 @@
         "experience": "Experience",
         "projects": "Projects",
         "contact": "Contact",
+        "services": "Services",
         "toggleTheme": "Toggle theme",
         "toggleLanguage": "Toggle language"
     },
@@ -105,6 +106,36 @@
         "viewLive": "Live Demo",
         "viewCode": "Source Code",
         "items": {
+            "araba": {
+                "title": "Araba - E-commerce SaaS",
+                "description": "A powerful SaaS platform enabling users to launch fully functional e-commerce stores in minutes. Features comprehensive store management, payment integration, and custom themes.",
+                "stack": "Laravel, Vue.js, MySQL",
+                "features": "Store Builder, Multi-tenant, Payment Gateways, Analytics"
+            },
+            "loftyservice": {
+                "title": "LoftyService",
+                "description": "A service-oriented platform dedicated to e-commerce growth, offering logistics, warehousing, and delivery solutions in the Middle East.",
+                "stack": "Laravel, Vue.js, TailwindCSS",
+                "features": "Order Tracking, Warehouse Management, Logistics API"
+            },
+            "procurion": {
+                "title": "Procurion",
+                "description": "A specialized communication and management platform tailored for healthcare professionals to streamline their daily operations.",
+                "stack": "Laravel, Vanilla JS, Blade",
+                "features": "Secure Messaging, Professional Directory, Resource Management"
+            },
+            "docselect": {
+                "title": "DocSelect",
+                "description": "Healthcare application connecting patients with local clinicians for seamless home visit bookings and medical consultations.",
+                "stack": "Laravel, React.js, Material UI",
+                "features": "Appointment Booking, Geolocation, Doctor Profiles, Reviews"
+            },
+            "logidesk": {
+                "title": "Logidesk",
+                "description": "A digital marketing and mailing solution helping businesses optimize their communication strategies and reach their audience effectively.",
+                "stack": "Symfony, Ajax, Twig, Vanilla JS",
+                "features": "Email Campaigns, Analytics Dashboard, Contact Management"
+            },
             "saas": {
                 "title": "SaaS Billing & Usage Platform",
                 "description": "A high-performance billing system handling metered usage, subscriptions, and invoicing for enterprise clients.",
@@ -135,5 +166,49 @@
         "title": "Let's Work Together",
         "description": "I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
         "cta": "Send me an email"
+    },
+    "Services": {
+        "title": "Service Catalogue",
+        "subtitle": "Select the services you need to build your perfect solution.",
+        "cta": {
+            "selected": "{count} services selected",
+            "whatsapp": "Chat on WhatsApp",
+            "email": "Send Email",
+            "empty": "Select a service"
+        },
+        "items": {
+            "portfolio": {
+                "title": "Portfolio Website",
+                "desc": "Showcase your work with a stunning, high-performance portfolio."
+            },
+            "websites": {
+                "title": "Business Website",
+                "desc": "Professional landing pages and corporate websites."
+            },
+            "webapps": {
+                "title": "Web Application",
+                "desc": "Complex SaaS platforms, dashboards, and management tools."
+            },
+            "ecommerce": {
+                "title": "E-commerce Store",
+                "desc": "Full-featured online stores with payment integration."
+            },
+            "mobile": {
+                "title": "Mobile App Development",
+                "desc": "Cross-platform mobile applications for iOS and Android."
+            },
+            "architecture": {
+                "title": "System Architecture",
+                "desc": "Scalable backend design, database optimization, and cloud setup."
+            },
+            "features": {
+                "title": "New Features",
+                "desc": "Add new functionalities to your existing application."
+            },
+            "bugs": {
+                "title": "Bug Fixing & Audit",
+                "desc": "Debug interactions, fix errors, and optimize performance."
+            }
+        }
     }
 }
