@@ -3,33 +3,52 @@
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from "framer-motion";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Projects() {
     const t = useTranslations("Projects");
+    const locale = useLocale();
+    const isRtl = locale === 'ar';
     const projectKeys = [
         "araba", "loftyservice", "procurion", "docselect", "logidesk",
         "saas", "kanban", "booking", "marketplace"
     ];
 
     const containerRef = useRef<HTMLDivElement>(null);
-    const [sliderWidth, setSliderWidth] = useState(0);
-    const [containerWidth, setContainerWidth] = useState(0);
+    const contentRef = useRef<HTMLDivElement>(null);
+    const [sliderConstraints, setSliderConstraints] = useState({ left: 0, right: 0 });
 
     useEffect(() => {
-        if (containerRef.current) {
-            setContainerWidth(containerRef.current.offsetWidth);
-            setSliderWidth(containerRef.current.scrollWidth);
-        }
-    }, [projectKeys]);
+        const updateConstraints = () => {
+            if (!containerRef.current || !contentRef.current) return;
+
+            const containerWidth = containerRef.current.offsetWidth;
+            const contentWidth = contentRef.current.scrollWidth;
+
+            // Adjust for padding/gap if necessary. 
+            // scrollWidth on the flex container should capture all children + gaps + padding-right.
+            // We want to stop exactly when the right edge of content hits right edge of container.
+
+            const maxScroll = Math.max(0, contentWidth - containerWidth + 48); // Adding buffer for safe padding
+
+            setSliderConstraints({
+                left: isRtl ? 0 : -maxScroll,
+                right: isRtl ? maxScroll : 0
+            });
+        };
+
+        const observer = new ResizeObserver(updateConstraints);
+        if (containerRef.current) observer.observe(containerRef.current);
+        if (contentRef.current) observer.observe(contentRef.current);
+
+        // Initial call
+        updateConstraints();
+
+        return () => observer.disconnect();
+    }, [projectKeys, isRtl]);
 
     // Horizontal scroll logic
     const x = useMotionValue(0);
-
-    // Limits
-    const DRAG_BUFFER = 50;
-    const constraintLeft = -(sliderWidth - containerWidth + DRAG_BUFFER);
-    const constraintRight = 0;
 
     return (
         <section id="projects" className="py-24 bg-zinc-50 dark:bg-zinc-950 overflow-hidden">
@@ -52,10 +71,14 @@ export default function Projects() {
                 </div>
             </div>
 
-            <div ref={containerRef} className="cursor-grab active:cursor-grabbing pl-4 md:pl-[calc((100vw-80rem)/2)]">
+            <div
+                ref={containerRef}
+                className={`cursor-grab active:cursor-grabbing ${isRtl ? 'pr-4 md:pr-[calc((100vw-80rem)/2)]' : 'pl-4 md:pl-[calc((100vw-80rem)/2)]'}`}
+            >
                 <motion.div
+                    ref={contentRef}
                     drag="x"
-                    dragConstraints={{ right: 0, left: -(projectKeys.length * 420) + (typeof window !== 'undefined' ? window.innerWidth : 1000) }}
+                    dragConstraints={sliderConstraints}
                     style={{ x }}
                     className="flex gap-6 md:gap-8 w-max pb-12 pr-12"
                 >
@@ -107,7 +130,7 @@ export default function Projects() {
                                         )}
                                     </div>
 
-                                  
+
                                 </div>
                             </div>
                         </motion.div>
