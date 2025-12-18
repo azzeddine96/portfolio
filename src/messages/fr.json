@@ -60,7 +60,7 @@
         "title": "Expérience Professionnelle",
         "jobs": {
             "lofty": {
-                "role": "Développeur Full-Stack Senior",
+                "role": "Ingénieur Logiciel",
                 "company": "Lofty Service & Araba",
                 "period": "2024 – Présent",
                 "description": "Plateformes SaaS & E-commerce",
@@ -89,7 +89,7 @@
                 ]
             },
             "wisecam": {
-                "role": "Ingénieur Logiciel",
+                "role": "Développeur Full-Stack",
                 "company": "Wisecam",
                 "period": "2021 – 2022",
                 "description": "Vision par Ordinateur & Interfaces Web",

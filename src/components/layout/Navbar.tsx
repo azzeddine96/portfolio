@@ -94,7 +94,7 @@ export default function Navbar() {
                                 </a>
                             ))}
                             <div className="flex justify-center mt-8 gap-4 items-center">
-                                <LanguageSwitcher />
+                                <LanguageSwitcher onSelect={() => setIsMobileMenuOpen(false)} />
                                 <ThemeToggle />
                             </div>
                         </div>

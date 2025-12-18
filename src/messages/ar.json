@@ -11,7 +11,7 @@
     },
     "Hero": {
         "greeting": "أهلاً، أنا",
-        "role": "مهندس برمجيات شامل (Full-Stack)",
+        "role": "مهندس برمجيات  (Full-Stack)",
         "description": "متخصص في Laravel، Vue 3، React، و Next.js. أقوم ببناء منصات SaaS قابلة للتوسع وتطبيقات تدر العائدات.",
         "viewProjects": "عرض أعمالي",
         "downloadResume": "تحميل السيرة الذاتية"
@@ -60,7 +60,7 @@
         "title": "الخبرة المهنية",
         "jobs": {
             "lofty": {
-                "role": "مطور Full-Stack Senior",
+                "role": "مهندس برمجيات",
                 "company": "Lofty Service & Araba",
                 "period": "2024 – حالياً",
                 "description": "منصات SaaS والتجارة الإلكترونية",
@@ -89,7 +89,7 @@
                 ]
             },
             "wisecam": {
-                "role": "مهندس برمجيات",
+                "role": "مطور Full-Stack",
                 "company": "Wisecam",
                 "period": "2021 – 2022",
                 "description": "الرؤية الحاسوبية وواجهات الويب",

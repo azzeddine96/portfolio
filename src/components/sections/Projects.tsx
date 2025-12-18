@@ -5,14 +5,15 @@ import { motion, useScroll, useTransform, useSpring, useMotionValue } from "fram
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 
+const projectKeys = [
+    "araba", "loftyservice", "procurion", "docselect", "logidesk",
+    "saas", "kanban", "booking", "marketplace"
+];
+
 export default function Projects() {
     const t = useTranslations("Projects");
     const locale = useLocale();
     const isRtl = locale === 'ar';
-    const projectKeys = [
-        "araba", "loftyservice", "procurion", "docselect", "logidesk",
-        "saas", "kanban", "booking", "marketplace"
-    ];
 
     const containerRef = useRef<HTMLDivElement>(null);
     const contentRef = useRef<HTMLDivElement>(null);

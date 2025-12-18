@@ -4,15 +4,40 @@ import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { Globe } from "lucide-react";
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+    onSelect?: () => void;
+}
+
+export default function LanguageSwitcher({ onSelect }: LanguageSwitcherProps) {
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
 
     const switchLocale = (newLocale: string) => {
-        // Remove the current locale from the pathname and replace it
-        const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+        if (newLocale === locale) {
+            if (onSelect) onSelect();
+            return;
+        }
+
+        // Robust way to replace the locale in the pathname
+        // segments[0] is empty string, segments[1] is the locale
+        const segments = pathname.split("/");
+        if (segments[1] === locale) {
+            segments[1] = newLocale;
+        } else {
+            // If for some reason the locale is not at segments[1], we prepend it
+            // but this shouldn't happen with the current [locale] structure
+            segments.splice(1, 0, newLocale);
+        }
+
+        const newPath = segments.join("/") || "/";
         router.push(newPath);
+
+        if (onSelect) {
+            // Small delay to allow navigation to start before closing menu if needed
+            // though router.push is usually fast enough
+            onSelect();
+        }
     };
 
     return (
