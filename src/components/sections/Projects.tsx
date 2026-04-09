@@ -2,13 +2,17 @@
 
 import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from "framer-motion";
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 
 const projectKeys = [
-    "araba", "loftyservice", "procurion", "docselect", "logidesk",
+    "freshmix", "araba", "loftyservice", "procurion", "docselect", "logidesk",
     "saas", "kanban", "booking", "marketplace"
 ];
+
+const LIVE_LINKS: Record<string, string> = {
+    freshmix: "https://freshmix-store.vercel.app",
+};
 
 export default function Projects() {
     const t = useTranslations("Projects");
@@ -101,10 +105,22 @@ export default function Projects() {
                                     alt={t(`items.${key}.title`)}
                                     className="w-full h-full object-cover"
                                 />
-                                <div className="absolute bottom-4 left-6 z-20">
-                                    <span className="inline-block px-3 py-1 mb-2 text-xs font-bold text-white bg-indigo-600/90 backdrop-blur-md rounded-full">
+                                <div className="absolute bottom-4 left-6 z-20 flex items-center gap-2">
+                                    <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-indigo-600/90 backdrop-blur-md rounded-full">
                                         {key.toUpperCase()}
                                     </span>
+                                    {LIVE_LINKS[key] && (
+                                        <a
+                                            href={LIVE_LINKS[key]}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                            className="inline-flex items-center gap-1 px-3 py-1 text-xs font-bold text-white bg-emerald-500/90 backdrop-blur-md rounded-full hover:bg-emerald-600 transition-colors"
+                                        >
+                                            <ExternalLink size={12} />
+                                            {t("viewLive")}
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 
@@ -138,6 +154,24 @@ export default function Projects() {
                     ))}
                 </motion.div>
             </div>
+
+            {/* CTA */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="max-w-7xl mx-auto px-4 mt-12 text-center"
+            >
+                <p className="text-xl font-semibold text-foreground mb-4">{t("ctaTitle")}</p>
+                <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    href="#contact"
+                    className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20"
+                >
+                    {t("ctaButton")} <ArrowRight size={18} className="rtl:rotate-180" />
+                </motion.a>
+            </motion.div>
         </section>
     );
 }

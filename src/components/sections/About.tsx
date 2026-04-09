@@ -5,14 +5,16 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import {
     Code2, Database, Layout, Zap, BarChart, Bot,
-    CheckCircle2, Lightbulb, Users, Rocket, Trophy
+    CheckCircle2, Lightbulb, Users, Rocket, Trophy, ArrowRight
 } from "lucide-react";
 
 // Duplicate skills for infinite scroll
 const SKILLS = [
     "PHP", "JavaScript", "SQL", "React.js", "Next.js", "Vue 3", "Redux", "Tailwind CSS",
     "Laravel", "Symfony", "Node.js", "Express.js", "Socket.IO", "MySQL", "PostgreSQL",
-    "MongoDB", "Redis", "Docker", "AWS", "Git", "CI/CD"
+    "MongoDB", "Redis", "Docker", "AWS", "Git", "CI/CD",
+    "Inertia.js", "Pinia", "OpenAI API", "Claude API", "Cypress", "PHPUnit",
+    "DigitalOcean", "Laravel Forge", "GitHub Actions", "Stripe", "API Platform"
 ];
 const MARQUEE_SKILLS = [...SKILLS, ...SKILLS]; // Duplicate for seamless loop
 
@@ -166,6 +168,24 @@ export default function About() {
                         ))}
                     </div>
                 </div>
+
+                {/* CTA Banner */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-20 p-8 md:p-12 rounded-3xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-lg border border-zinc-200/50 dark:border-zinc-700/50 text-center"
+                >
+                    <h3 className="text-2xl md:text-3xl font-bold mb-6">{t("ctaTitle")}</h3>
+                    <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        href="#contact"
+                        className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20"
+                    >
+                        {t("ctaButton")} <ArrowRight size={18} className="rtl:rotate-180" />
+                    </motion.a>
+                </motion.div>
             </div>
         </section>
     );

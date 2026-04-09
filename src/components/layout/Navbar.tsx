@@ -25,6 +25,7 @@ export default function Navbar() {
         { name: t("experience"), href: "#experience" },
         { name: t("services"), href: "#services" },
         { name: t("projects"), href: "#projects" },
+        { name: t("booking"), href: "#booking" },
         { name: t("contact"), href: "#contact" },
     ];
 

@@ -6,6 +6,7 @@
         "projects": "Projets",
         "contact": "Contact",
         "services": "Services",
+        "booking": "Réserver un appel",
         "toggleTheme": "Changer de thème",
         "toggleLanguage": "Changer de langue"
     },
@@ -14,14 +15,17 @@
         "role": "Ingénieur Full-Stack Senior",
         "description": "Spécialisé en Laravel, Vue 3, React et Next.js. Je construis des plateformes SaaS évolutives et des applications génératrices de revenus.",
         "viewProjects": "Voir mes projets",
-        "downloadResume": "Télécharger CV"
+        "downloadResume": "Télécharger CV",
+        "letsTalk": "Discutons"
     },
     "About": {
         "title": "À Propos de Moi",
-        "description": "Je suis Azzeddine Fejri, un ingénieur logiciel Full-Stack senior spécialisé en Laravel, Vue 3, React et Next.js. Je possède une solide expérience dans la création de plateformes SaaS évolutives, de systèmes multi-locataires et d'applications critiques.\n\nJe combine une architecture propre, des systèmes back-end performants et des expériences front-end modernes pour livrer des produits non seulement techniquement solides, mais aussi centrés sur l'utilisateur et la croissance.",
+        "description": "Ingénieur Full-Stack avec plus de 4 ans d'expérience dans la construction de plateformes SaaS en production, de systèmes e-commerce multi-locataires et d'applications alimentées par l'IA. Je livre de bout en bout — du schéma de base de données à l'interface pixel-perfect — et je prends en charge les décisions techniques. J'intègre actuellement des API LLM et des workflows d'automatisation dans des produits réels.",
         "skillsTitle": "Arsenal Technique",
         "whatIDoTitle": "Ce que je fais de mieux",
         "valueTitle": "Comment j'apporte de la valeur",
+        "ctaTitle": "Prêt à construire quelque chose de génial ?",
+        "ctaButton": "Contactez-moi",
         "services": {
             "saas": {
                 "title": "Plateformes SaaS complètes",
@@ -41,7 +45,7 @@
             },
             "ai": {
                 "title": "Intégration IA",
-                "desc": "IA et microservices utilisant Node.js."
+                "desc": "Fonctionnalités LLM via les API OpenAI & Claude, avec microservices Node.js."
             },
             "performance": {
                 "title": "Performance",
@@ -58,6 +62,8 @@
     },
     "Experience": {
         "title": "Expérience Professionnelle",
+        "ctaTitle": "Vous aimez ce que vous voyez ? Travaillons ensemble",
+        "ctaButton": "Me contacter",
         "jobs": {
             "lofty": {
                 "role": "Ingénieur Logiciel",
@@ -65,13 +71,16 @@
                 "period": "2024 – Présent",
                 "description": "Plateformes SaaS & E-commerce",
                 "achievements": [
-                    "Création d'une plateforme e-commerce multi-vendeurs à grande échelle",
+                    "Construction d'un CRM multi-locataire complet avec Laravel ; supporte plus de 1 000 boutiques indépendantes avec données isolées",
                     "Développement de tableaux de bord vendeurs & admin avec Vue 3 et Laravel",
-                    "Implémentation d'abonnements Stripe, tarification par fonctionnalités et portefeuilles",
-                    "Conception d'un constructeur de pages drag-and-drop",
-                    "Intégration d'API de suivi de trafic et conversion (Meta, TikTok)",
-                    "Refactoring du code utilisant les principes SOLID",
-                    "Introduction de microservices Node.js pour l'IA"
+                    "Architecture de la facturation Stripe : abonnements, tarification à l'usage, codes promo, Google Pay / Apple Pay",
+                    "Architecture du système de paiement BNPL Taby & Tamara avec traitement des versements",
+                    "Conception d'un constructeur de pages drag-and-drop pour les pages produits (Vue 3 + Ace Editor)",
+                    "Intégration d'iLandy v2, un éditeur de landing pages basé sur GrapesJS",
+                    "Intégration d'API de suivi de conversion (Meta, TikTok, Snapchat) et automatisation email Brevo",
+                    "Refactoring du code utilisant les principes SOLID et les design patterns",
+                    "Lancement de microservices Node.js pour les fonctionnalités IA",
+                    "Construction de tableaux de bord analytiques en temps réel (trafic, commandes) utilisés quotidiennement par les équipes ops et marketing"
                 ]
             },
             "quintel": {
@@ -85,18 +94,19 @@
                     "Fonctionnalités d'appels vidéo et audio",
                     "Systèmes asynchrones utilisant des files d'attente (Queues)",
                     "Notifications email et SMS intégrées",
-                    "Travail en environnement Agile avec Jira"
+                    "Travail en environnement Agile avec Jira",
+                    "Construction d'un module de gestion de séances de thérapie de groupe utilisé par plus de 50 thérapeutes"
                 ]
             },
             "wisecam": {
                 "role": "Développeur Full-Stack",
                 "company": "Wisecam",
                 "period": "2021 – 2022",
-                "description": "Vision par Ordinateur & Interfaces Web",
+                "description": "Gestion de Salle de Sport & Développement API",
                 "achievements": [
-                    "Développement d'interfaces web pour la gestion de caméras",
-                    "Intégration d'API de vision par ordinateur",
-                    "Optimisation de bases de données volumineuses"
+                    "Conception d'un schéma de base de données normalisé pour la gestion de salle de sport (membres, plannings, permissions)",
+                    "Construction d'une authentification API sécurisée avec Laravel Passport et documentation API interactive",
+                    "Optimisation des temps de réponse API de 35% grâce à l'optimisation des requêtes et des index"
                 ]
             }
         }
@@ -105,7 +115,15 @@
         "title": "Projets Phares",
         "viewLive": "Voir le Demo",
         "viewCode": "Code Source",
+        "ctaTitle": "Vous avez un projet en tête ?",
+        "ctaButton": "Discutons-en",
         "items": {
+            "freshmix": {
+                "title": "FreshMix — Créateur de Jus Personnalisé",
+                "description": "Expérience e-commerce interactive pour commander des jus frais personnalisés. Les utilisateurs créent leur propre mélange en sélectionnant des fruits via un mixer visuel drag-and-drop, puis passent à la caisse — alliant innovation UX et parcours d'achat complet.",
+                "stack": "Next.js, React, Tailwind CSS, Vercel",
+                "features": "Mixer visuel, Drag & Drop, Multi-langue, Système de panier"
+            },
             "araba": {
                 "title": "Araba - SaaS E-commerce",
                 "description": "Une plateforme SaaS puissante permettant aux utilisateurs de lancer des boutiques en ligne complètes en quelques minutes.",
@@ -161,6 +179,28 @@
                 "features": "Flux RFQ, Chat, Vérification fournisseurs"
             }
         }
+    },
+    "Booking": {
+        "title": "Planifier un rendez-vous",
+        "description": "Choisissez un créneau qui vous convient. Je suis disponible pour des consultations, des discussions de projets et des sessions de stratégie technique.",
+        "cta": "Réserver un appel de 30 min",
+        "duration": "30 min",
+        "durationLabel": "Durée",
+        "format": "Google Meet / Zoom",
+        "formatLabel": "Format",
+        "availability": "Lun – Dim",
+        "availabilityLabel": "Disponibilité",
+        "cost": "Gratuit",
+        "costLabel": "Coût",
+        "topics": {
+            "title": "Ce que nous pouvons discuter",
+            "0": "Cadrage de projet & besoins techniques",
+            "1": "Architecture & recommandations de stack",
+            "2": "SaaS, e-commerce ou intégrations IA",
+            "3": "Collaboration continue & plans de suivi"
+        },
+        "fallbackText": "Vous préférez l'email ?",
+        "fallbackCta": "Envoyez-moi un message"
     },
     "Contact": {
         "title": "Travaillons Ensemble",

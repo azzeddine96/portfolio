@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function Hero() {
@@ -28,12 +28,12 @@ export default function Hero() {
                         {t("description")}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start rtl:md:justify-start mt-8">
+                    <div className="flex flex-wrap gap-3 justify-center md:justify-start rtl:md:justify-start mt-8">
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             href="#projects"
-                            className="px-8 py-3 rounded-full bg-indigo-600 text-white font-medium flex items-center justify-center gap-2 hover:bg-indigo-700 transition-colors whitespace-nowrap shadow-lg shadow-indigo-500/20"
+                            className="px-6 sm:px-8 py-3 rounded-full bg-indigo-600 text-white font-medium flex items-center justify-center gap-2 hover:bg-indigo-700 transition-colors whitespace-nowrap shadow-lg shadow-indigo-500/20"
                         >
                             {t("viewProjects")} <ArrowRight size={18} className="rtl:rotate-180" />
                         </motion.a>
@@ -41,11 +41,10 @@ export default function Hero() {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="/Azzeddine%20fejri%20-fr.pdf"
-                            download="Azzeddine_Fejri_Resume.pdf"
-                            className="px-8 py-3 rounded-full border border-zinc-200 dark:border-zinc-800 font-medium flex items-center justify-center gap-2 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors whitespace-nowrap text-foreground"
+                            href="#contact"
+                            className="px-6 sm:px-8 py-3 rounded-full border border-indigo-500 text-indigo-600 dark:text-indigo-400 font-medium flex items-center justify-center gap-2 hover:bg-indigo-50 dark:hover:bg-indigo-950 transition-colors whitespace-nowrap"
                         >
-                            {t("downloadResume")} <Download size={18} />
+                            {t("letsTalk")} <MessageCircle size={18} />
                         </motion.a>
                     </div>
                 </div>

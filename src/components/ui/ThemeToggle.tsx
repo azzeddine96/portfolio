@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
 export function ThemeToggle() {
-    const { theme, setTheme } = useTheme();
+    const { resolvedTheme, setTheme } = useTheme();
     const [mounted, setMounted] = React.useState(false);
 
     React.useEffect(() => {
@@ -21,7 +21,7 @@ export function ThemeToggle() {
         <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
             className="p-2 rounded-full bg-background/50 border border-zinc-200 dark:border-zinc-800 backdrop-blur-sm shadow-sm hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             aria-label="Toggle theme"
         >

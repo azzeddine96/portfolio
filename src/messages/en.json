@@ -6,6 +6,7 @@
         "projects": "Projects",
         "contact": "Contact",
         "services": "Services",
+        "booking": "Book a Call",
         "toggleTheme": "Toggle theme",
         "toggleLanguage": "Toggle language"
     },
@@ -14,14 +15,17 @@
         "role": "Senior Full-Stack Engineer",
         "description": "Specializing in Laravel, Vue 3, React, and Next.js. I build scalable SaaS platforms and revenue-driven applications.",
         "viewProjects": "View My Work",
-        "downloadResume": "Download Resume"
+        "downloadResume": "Download Resume",
+        "letsTalk": "Let's Talk"
     },
     "About": {
         "title": "About Me",
-        "description": "I’m Azzeddine Fejri, a Senior Full-Stack Software Engineer specializing in Laravel, Vue 3, React, and Next.js, with strong experience building scalable SaaS platforms, multi-tenant systems, and business-critical applications.\n\nI combine clean architecture, high-performance back-end systems, and modern front-end experiences to deliver products that are not only technically solid, but also revenue-driven and user-focused.",
+        "description": "Full-Stack Engineer with 4+ years building production SaaS platforms, multi-tenant e-commerce systems, and AI-powered applications. I ship end-to-end — from database schema to pixel-perfect UI — and take ownership of technical decisions. Currently integrating LLM APIs and automation workflows into real products.",
         "skillsTitle": "Technical Arsenal",
         "whatIDoTitle": "What I Do Best",
         "valueTitle": "How I Add Value",
+        "ctaTitle": "Ready to build something great?",
+        "ctaButton": "Get In Touch",
         "services": {
             "saas": {
                 "title": "End-to-End SaaS",
@@ -41,7 +45,7 @@
             },
             "ai": {
                 "title": "AI Integration",
-                "desc": "AI & microservices using Node.js."
+                "desc": "LLM-powered features using OpenAI & Claude APIs, with Node.js microservices."
             },
             "performance": {
                 "title": "Performance",
@@ -58,6 +62,8 @@
     },
     "Experience": {
         "title": "Professional Experience",
+        "ctaTitle": "Like what you see? Let's work together",
+        "ctaButton": "Contact Me",
         "jobs": {
             "lofty": {
                 "role": "Software Engineer",
@@ -65,13 +71,16 @@
                 "period": "2024 – Present",
                 "description": "SaaS & E-commerce Platforms",
                 "achievements": [
-                    "Built a large-scale multi-tenant e-commerce platform for sellers",
+                    "Built full multi-tenant CRM from scratch using Laravel; supports 1,000+ independent seller stores with isolated data",
                     "Developed seller & admin dashboards with Vue 3 and Laravel",
-                    "Implemented Stripe subscriptions, feature-based pricing, and wallets",
-                    "Designed a drag-and-drop page builder for product pages",
-                    "Integrated traffic tracking & conversion APIs (Meta, TikTok)",
-                    "Led codebase refactoring using SOLID principles",
-                    "Introduced Node.js microservices for AI-powered features"
+                    "Architected Stripe billing: subscriptions, metered pricing, promo codes, Google Pay / Apple Pay",
+                    "Architected Taby & Tamara BNPL payment system with installment processing",
+                    "Designed drag-and-drop page builder for product pages (Vue 3 + Ace Editor)",
+                    "Integrated iLandy v2, a landing page editor based on GrapesJS",
+                    "Integrated conversion tracking APIs (Meta, TikTok, Snapchat) and Brevo email automation",
+                    "Led codebase refactoring using SOLID principles and design patterns",
+                    "Launched Node.js microservices for AI-driven product features",
+                    "Built real-time analytics dashboards (traffic, orders) used daily by ops and marketing team"
                 ]
             },
             "quintel": {
@@ -85,18 +94,19 @@
                     "Implemented video & audio call features",
                     "Designed asynchronous systems using queues",
                     "Integrated email and SMS notification services",
-                    "Worked in Agile environment with Jira"
+                    "Worked in Agile environment with Jira",
+                    "Built group therapy session management module used by 50+ therapists"
                 ]
             },
             "wisecam": {
                 "role": "Full-Stack Developer",
                 "company": "Wisecam",
                 "period": "2021 – 2022",
-                "description": "Computer Vision & Web Interfaces",
+                "description": "Gym Management & API Development",
                 "achievements": [
-                    "Developed web interfaces for camera management",
-                    "Integrated computer vision APIs for real-time analysis",
-                    "Optimized database performance for large datasets"
+                    "Designed normalized database schema for gym management (members, schedules, permissions)",
+                    "Built secure API authentication with Laravel Passport and interactive API documentation",
+                    "Optimized API response times by 35% through query tuning and index optimization"
                 ]
             }
         }
@@ -105,7 +115,15 @@
         "title": "Featured Projects",
         "viewLive": "Live Demo",
         "viewCode": "Source Code",
+        "ctaTitle": "Have a project in mind?",
+        "ctaButton": "Let's Discuss",
         "items": {
+            "freshmix": {
+                "title": "FreshMix — Custom Juice Builder",
+                "description": "Interactive e-commerce experience for ordering fresh custom juices. Users build their own blend by selecting fruits via a visual drag-and-drop mixer, then proceed to checkout — combining UX innovation with a full purchase flow.",
+                "stack": "Next.js, React, Tailwind CSS, Vercel",
+                "features": "Visual Mixer, Drag & Drop, Multi-language, Cart System"
+            },
             "araba": {
                 "title": "Araba - E-commerce SaaS",
                 "description": "A powerful SaaS platform enabling users to launch fully functional e-commerce stores in minutes. Features comprehensive store management, payment integration, and custom themes.",
@@ -161,6 +179,28 @@
                 "features": "RFQ Workflow, Chat system, Supplier verification, Admin panel"
             }
         }
+    },
+    "Booking": {
+        "title": "Schedule a Meeting",
+        "description": "Pick a time that works for you. I'm available for consultations, project discussions, and technical strategy sessions.",
+        "cta": "Book a 30-min Call",
+        "duration": "30 min",
+        "durationLabel": "Duration",
+        "format": "Google Meet / Zoom",
+        "formatLabel": "Format",
+        "availability": "Mon – Sun",
+        "availabilityLabel": "Availability",
+        "cost": "Free",
+        "costLabel": "Cost",
+        "topics": {
+            "title": "What we can discuss",
+            "0": "Project scoping & technical requirements",
+            "1": "Architecture & stack recommendations",
+            "2": "SaaS, e-commerce, or AI integrations",
+            "3": "Ongoing collaboration & retainer plans"
+        },
+        "fallbackText": "Prefer email?",
+        "fallbackCta": "Send me a message instead"
     },
     "Contact": {
         "title": "Let's Work Together",

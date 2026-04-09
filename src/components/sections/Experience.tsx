@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function Experience() {
@@ -68,7 +68,7 @@ export default function Experience() {
                                         Quintel: 6 items
                                         Wisecam: 3 items
                                     */}
-                                    {(job === 'lofty' ? [0, 1, 2, 3, 4, 5, 6] : job === 'quintel' ? [0, 1, 2, 3, 4, 5] : [0, 1, 2]).map((i) => (
+                                    {(job === 'lofty' ? [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] : job === 'quintel' ? [0, 1, 2, 3, 4, 5, 6] : [0, 1, 2]).map((i) => (
                                         <li key={i} className="text-muted-foreground text-sm leading-relaxed flex items-start gap-2">
                                             <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
                                             <span>{t(`jobs.${job}.achievements.${i}`)}</span>
@@ -79,6 +79,24 @@ export default function Experience() {
                         </motion.div>
                     ))}
                 </div>
+
+                {/* CTA Card */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-16 p-8 md:p-12 rounded-2xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-lg border border-zinc-200/50 dark:border-zinc-700/50 text-center"
+                >
+                    <h3 className="text-xl md:text-2xl font-bold mb-6">{t("ctaTitle")}</h3>
+                    <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        href="#contact"
+                        className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20"
+                    >
+                        {t("ctaButton")} <ArrowRight size={18} className="rtl:rotate-180" />
+                    </motion.a>
+                </motion.div>
             </div >
         </section >
     );

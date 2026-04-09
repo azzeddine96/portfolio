@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Azzeddine | Software Engineer",
   description: "Professional portfolio of Azzeddine, a Software Engineer with 4 years of experience.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default async function LocaleLayout({

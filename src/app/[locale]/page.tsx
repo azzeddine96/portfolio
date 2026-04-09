@@ -4,7 +4,8 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
-import Services from "@/components/sections/Services"; // Add import
+import Services from "@/components/sections/Services";
+import Booking from "@/components/sections/Booking";
 import Contact from "@/components/sections/Contact";
 import Navbar from "@/components/layout/Navbar";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Services />
+      <Booking />
       <Contact />
 
       <footer className="py-8 text-center text-muted-foreground text-sm border-t border-zinc-100 dark:border-zinc-800">
